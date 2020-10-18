@@ -1,0 +1,176 @@
+.sectionTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+}
+
+.administratorWrapper {
+    padding-bottom: 12px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #E2E0EF;
+}
+
+.btn {
+    width: 131px;
+}
+
+.error {
+    color: #ff563a;
+    padding: 5px 0 0 5px;
+}
+
+.commonError{
+    color: #ff563a;
+    padding-left: 16px;
+    top: -18px;
+}
+
+@media screen and (max-width: 1023px) {
+    .organisationAndAdministratorContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        background: white;
+        z-index: 14;
+    }
+
+    .administratorWrapper, .organisationWrapper {
+        padding: 0 16px;
+    }
+
+    .headerCls {
+        width: calc(100vw + 15px);
+    }
+
+    .contentWrapper {
+        height: calc(100vh - 56px);
+        overflow-y: auto;
+        /*overflow-x: hidden;*/
+    }
+
+    .sectionTitle {
+        margin-bottom: 25px;
+        padding-top: 16px;
+    }
+
+    .inputs {
+        padding-bottom: 31px;
+    }
+
+    .btn {
+        margin: 16px 0 80px 16px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .organisationAndAdministratorContent {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }.organisationAndAdministratorContent::-webkit-scrollbar {
+         width: 3px;
+         height: 3px;
+     }
+
+    .organisationAndAdministratorContent::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .organisationAndAdministratorContent::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .organisationAndAdministratorContent::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .organisationAndAdministratorContent::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .organisationAndAdministratorContent::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .organisationAndAdministratorContent::-webkit-resizer {
+        background-color: #666;
+    }
+
+    .organisationAndAdministratorContainer {
+        position: absolute;
+        width: 370px;
+        left: 377px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+        padding-bottom: 50px;
+    }
+
+    .title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        padding: 35px 0 35px;
+    }
+
+    .sectionTitle {
+        margin-bottom: 25px;
+    }
+
+    .inputs {
+        margin: 0 0 31px;
+    }
+
+    .administratorWrapper {
+        padding-bottom: 12px;
+        margin-bottom: 24px;
+    }
+
+    .btn {
+        margin-bottom: 50px;
+    }
+
+    .commonError{
+        color: #ff563a;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .organisationAndAdministratorContainer {
+        position: absolute;
+        width: 1030px;
+        left: 505px;
+    }
+
+    .contentWrapper {
+        display: flex;
+    }
+
+    .administratorWrapper, .organisationWrapper {
+        width: 440px;
+    }
+
+    .administratorWrapper {
+        border: none;
+        margin-right: 150px;
+    }
+}

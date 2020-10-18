@@ -1,0 +1,208 @@
+.attachEmployeeContainer {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    /*transform: translateX(0);*/
+    /*transition: .3s linear;*/
+    background: #FFFFFF;
+}
+
+.attachEmployeeWrapper {
+    position: relative;
+    /*padding-bottom: 85px;*/
+    /*overflow-y: auto;*/
+
+}
+
+/*.attachEmployeeContainerClose{*/
+/*    transform: translateX(+100%);*/
+/*    transition: .3s linear;*/
+/*}*/
+
+.inputFieldWrapper {
+    padding: 81px 16px 0 16px;
+}
+
+.roomsWrapper {
+    padding-top: 26px;
+}
+
+.AvailableRoomsWrapper {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.022em;
+    color: #0D2221;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 17px;
+}
+
+.switch {
+    position: absolute;
+    top: -8px;
+    right: 4px;
+}
+
+.floorsWrapper {
+    padding-top: 10px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.42);
+}
+
+.BtnWrapper {
+    /*position: fixed;*/
+    padding: 15px 84px 0 84px;
+    height: 96px;
+    background: #FFFFFF;
+    /*top: calc( 100vh - 100px);*/
+    left: 0;
+    width: 100vw;
+    border-top: 1px solid #E2E0EF;
+}
+
+.Btn:disabled {
+    opacity: 0.32;
+}
+
+.user {
+    padding: 20px 16px 0 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .headerClassName {
+        position: fixed;
+        width: 100%;
+    }
+
+    .floorsWrapper > div {
+        height: auto;
+        min-height: calc(100vh - 350px) !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .attachEmployeeContainer {
+        height: calc(100% - 60px);
+        background: #FFFFFF;
+        width: 100%;
+        top: 60px;
+        padding: 20px 102px 105px 65px;
+    }
+
+    .floorsWrapper > div {
+        height: max-content;
+    }
+
+    .headerClassName {
+        border: none;
+    }
+
+    .headerClassName img {
+        height: 75px;
+    }
+
+    .headerClassName h2 {
+        right: 68px;
+    }
+
+    .attachEmployeeWrapper {
+        padding-left: 78px;
+        max-width: 1265px;
+        width: 100%;
+    }
+
+    .inputFieldWrapper {
+        padding: 18px 0 5px;
+        width: 369px;
+    }
+
+    .AvailableRoomsWrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 385px;
+        padding: 0;
+    }
+
+    .switch {
+        position: relative;
+        top: -7px;
+        right: 4px;
+    }
+
+    .floorsWrapper {
+        padding: 25px 117px 0 0;
+    }
+
+    .BtnWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        height: 96px;
+        bottom: 0;
+        left: 118px;
+        width: calc(100% - 118px);
+        top: calc(100vh - 96px);
+        padding: 0 0 0 70px;
+    }
+
+    .Btn {
+        width: 153px;
+    }
+
+
+    .user {
+        cursor: pointer;
+        z-index: 16;
+    }
+
+    .modalClassName{
+        width: 560px;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .attachEmployeeContainer {
+        height: calc(100% - 60px);
+        padding: 37px 502px 118px 75px;
+    }
+
+    .headerClassName h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .attachEmployeeWrapper {
+        padding-left: 78px;
+        max-width: 100%;
+    }
+
+    .AvailableRoomsWrapper {
+        width: 455px;
+    }
+
+    .inputFieldWrapper {
+        padding-top: 10px;
+        width: 440px;
+    }
+}

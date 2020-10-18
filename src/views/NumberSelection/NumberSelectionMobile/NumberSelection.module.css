@@ -1,0 +1,271 @@
+.numberSelectionDTContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    color: #0D2221;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.myListWrapper{
+    background: #FAF9FF;
+    border-radius: 24px 0 0 24px;
+    padding: 0 15px;
+}
+
+.myListWrapper .title{
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
+
+.myOrganisationsHeader{
+    padding: 15px 18.15px 18px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .0015em;
+    color: #0d2221;
+}
+
+.menuWrapper{
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*right: 0;*/
+    /*z-index: 5;*/
+}
+
+@media screen and (max-width: 1023px) {
+    .choosingModal {
+        padding-bottom: 45px !important;
+        top: calc(100% - 290px) !important;
+        max-height: 290px;
+        overflow-y: auto;
+    }
+
+    .tabsContentCls{
+        height: calc(100vh - 160px)
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .numberSelectionDTContainer {
+        padding-left: 15px;
+    }
+
+    .numberSelectionWrapper{
+
+        width: 65%;
+        padding-right: 15px;
+    }
+
+    .myListWrapper{
+        border-radius: 24px 0 0 24px;
+        width: 35%;
+        padding: 0 10px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+    .numberSelectionDTContainer {
+        padding-left: 63px;
+    }
+
+    .numberSelectionWrapper{
+        min-width: 590px;
+        width: 65%;
+        padding-right: 103px;
+    }
+
+    .myListWrapper{
+        min-width: 392px;
+        width: 35%;
+
+    }
+
+    .title{
+        padding-bottom: 15px;
+        padding-top: 36px;
+    }
+
+    .myListWrapper .title{
+        padding-bottom: 0;
+        padding-left: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .numberSelectionDTContainer {
+        padding-left: 149px;
+    }
+
+    .title{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.0025em;
+        color: #0D2221;
+        padding-bottom: 15px;
+        padding-top: 44px;
+    }
+
+    .numberSelectionWrapper{
+        padding-right: 150px;
+        width: 100%;
+    }
+
+    .myListWrapper{
+        background: #FAF9FF;
+        border-radius: 24px 0 0 24px;
+        max-width: 650px;
+        min-width: 590px;
+        width: 50%;
+        padding: 0 24px;
+    }
+
+    .myListWrapper .title{
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .organisationTitle{
+        display: none!important;
+    }
+
+    .numberSelectionDTContainer {
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    .numberSelectionWrapper{
+        height: max-content;
+    }
+
+    .titleWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menuWrapper{
+        display: flex;
+        align-content: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #302DA7;
+        cursor: pointer;
+        top: 15px;
+    }
+
+    .menuWrapper img{
+        height: 14px;
+        margin-right: 15px;
+    }
+
+    .choosingModal {
+        padding-bottom: 0!important;
+        /*top: calc(100% - 290px) !important;*/
+        height: max-content!important;
+        max-height: 290px!important;
+        overflow-y: auto;
+    }
+    .choosingModal div:last-child{
+        padding-bottom: 22px!important;
+    }
+
+    .myListWrapper{
+        height: max-content;
+        min-height: calc(100vh - 60px);
+    }
+
+    .numberSelectionDTContainer::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .numberSelectionDTContainer::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .numberSelectionDTContainer::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .numberSelectionDTContainer::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .numberSelectionDTContainer::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .numberSelectionDTContainer::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .numberSelectionDTContainer::-webkit-resizer {
+        background-color: #666;
+    }
+
+
+    .choosingModal::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .choosingModal::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+        visibility: hidden;
+
+    }
+
+    .choosingModal::-webkit-scrollbar-track {
+        background-color: #999;
+        margin: 10px 0;
+    }
+
+    .choosingModal::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .choosingModal::-webkit-scrollbar-thumb {
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .choosingModal::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .choosingModal::-webkit-resizer {
+        background-color: #666;
+    }
+}

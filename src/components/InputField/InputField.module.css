@@ -1,0 +1,177 @@
+.fieldsetWrapper{
+    position: relative;
+    width: 100%;
+}
+
+.Fieldset{
+    position: relative;
+    height: 56px;
+    border: 1px solid #6F6C86;
+    color: #6F6C86;
+    border-radius: 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+
+.Input, .inputClass{
+    display: block;
+    position: absolute;
+    margin:0 14px;
+    background: transparent;
+    outline: none;
+    border: none;
+    top: 16px;
+    width: calc(100% - 28px);
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    resize: none;
+}
+
+.Fieldset .LegendIn{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+
+    position: absolute;
+    top: 15px;
+    margin-left: 14px;
+    -webkit-transition: .1s ease;
+    -moz-transition: .1s ease;
+    -o-transition: .1s ease;
+    transition: .1s ease;
+    z-index: 0;
+}
+
+.LegendIn.LegendUp, .LegendIn.LegendUpWithChoose{
+    font-family: Inter;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+
+    position: absolute;
+    top: -10px;
+    left: -6px;
+    padding: 0 5px 0 5px;
+    border-radius: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    -webkit-transition: .1s ease;
+    -moz-transition: .1s ease;
+    -o-transition: .1s ease;
+    transition: .1s ease;
+    z-index: 1;
+}
+
+.LegendIn.LegendUpWithChoose{
+    color: #302DA7;
+}
+
+.arrowDown{
+    position: absolute;
+    height: 6.27px;
+    width: 11px;
+    top: 24.88px;
+    right: 18.36px;
+    z-index: 25;
+    /*cursor: pointer;*/
+
+}
+.arrowUp{
+    position: absolute;
+    height: 6.27px;
+    width: 11px;
+    top: 20.88px;
+    right: 18.36px;
+    z-index: 25;
+/*cursor: pointer;*/
+}
+.FieldsetBlue{
+    position: relative;
+    border: 2px solid #302DA7;
+    min-height: 56px;
+    max-height: max-content;
+    height: max-content;
+    padding-right: 10px;
+}
+
+.helperOff{
+    position: absolute;
+    /*top: 65px;*/
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: .15s linear .1s;
+    overflow: hidden;
+    width: 100%;
+
+    /*padding: 20px 16px;*/
+}
+.helper{
+    position: absolute;
+    /*top: 65px;*/
+    height: 256px;
+    background: #FFFFFF;
+    box-shadow: 0 5.65px 8px rgba(0, 0, 0, 0.0282725), 0 12.34px 23.87px rgba(0, 0, 0, 0.0417275), 0 12px 104px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    z-index: 3;
+    transition: .15s linear .05s;
+    /*border: 1px solid silver;*/
+    width: 100%;
+}
+.helperOff > div{
+    transition: .1s linear;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    /*height: 1px;*/
+}
+.helper > div{
+    transition: .1s linear .1s;
+    opacity: 1;
+}
+
+.itemName{
+    display: flex;
+    justify-content: space-between;
+    background: #302DA7;
+    border-radius: 55px;
+    height: 32px;
+    margin: 8px 0 5px 10px;
+    width: max-content;
+    padding: 4px 5px 4px 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    z-index: 5;
+}
+
+.itemName img{
+    width: 20px;
+    margin-left: 15px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .itemName {
+        display: inline-flex;
+    }
+}

@@ -1,0 +1,311 @@
+.headerTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    padding: 22px 16px 10px;
+}
+
+.printFormsWrapper{
+    padding: 0 16px 32px 16px;
+    background: #FFFFFF;
+}
+
+.aboutPrintingWrapper{
+    padding-top: 6px;
+}
+
+.textAboutPrinting{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+    padding: 0 16px 13px;
+}
+
+.sampleImg{
+    /*min-width: 288px;*/
+    /*max-width: 420px;*/
+    /*width: 100%;*/
+
+    width: 290px;
+    height: 202px;
+    background: url("../../../assets/images/printForms/sample-of-triangle.jpg") center/cover no-repeat;
+    border-radius: 25px;
+}
+
+.sampleOfTriangle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+    padding-top: 10px;
+}
+
+.inputFieldWithChooseWrapper{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.childWrapper{
+    height: 305px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.BtnWrapper{
+    width: 100%;
+    padding: 5px 7px;
+
+}
+.recipientWrapper{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    top: -4px;
+    padding: 13px 16px 12px 16px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.selectAll{
+    display: flex;
+    align-items: center;
+    padding: 16px 16px 12px 17px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.checkRecipient{
+    height: 19px;
+    padding-right: 35px;
+}
+
+.hrLineSecond{
+    border-top: 1px solid #E2E0EF;
+}
+.inputFieldWrapper{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.copyIconWrapper{
+    height: 54px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 12px;
+    right: 7px;
+    top: 1px;
+    background: linear-gradient(270deg, #FFFFFF 65.16%, rgba(255, 255, 255, 0) 100%);
+}
+
+.copyIcon {
+    height: 55px;
+    border-radius: 12px;
+
+}
+
+
+@media screen and (max-width: 1023px) {
+    .printFormsContainer{
+        overflow-y: auto;
+        height: calc(100vh - 56px);
+        border-top: 1px solid #E2E0EF;
+    }
+
+    .printFormsContainerIphoneInFocus{
+
+    }
+
+    .rightBlockWrapper{
+        padding: 0 16px;
+    }
+
+    .btnWrapper {
+        padding-bottom: 32px;
+    }
+
+    .Btn{
+        width: 143px;
+        margin-bottom: 50px;
+    }
+
+    .printFormsWrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .printFormsContainer {
+        padding: 35px 315px 20px 63px;
+        overflow-y: auto;
+        height: calc(100vh - 60px);
+    }
+
+    .gridBlock {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .headerTitle{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        padding: 0;
+    }
+
+    .leftBlockWrapper {
+        height: 100vh;
+        margin-right: 50px;
+    }
+
+    .printFormsWrapper{
+        padding: 0;
+    }
+
+    .aboutPrintingWrapper{
+        padding-top: 23px;
+    }
+
+    .textAboutPrinting{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.001em;
+        color: #6F6C86;
+
+        padding: 15px 0 7px;
+        width: 430px;
+    }
+
+    .sampleImg{
+        height: 230px;
+    }
+
+    .sampleOfTriangle {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.001em;
+        color: #6F6C86;
+        padding-top: 13px;
+
+    }
+
+    .rightBlockWrapper{
+        margin-right: 19px;
+        min-width: 300px;
+        max-width: 415px;
+        width: 100%;
+    }
+
+    .selectAll, .user{
+        cursor: pointer;
+    }
+
+    .modalCls{
+        width: 560px;
+    }
+
+    .Btn{
+        width: 148px;
+    }
+
+    .recipientWrapper::-webkit-scrollbar { width: 3px; height: 3px;}
+    .recipientWrapper::-webkit-scrollbar-button {  background-color: rgba(95, 148, 226, 0.53); height: 8px; width: 5px; border-radius: 5px;}
+    .recipientWrapper::-webkit-scrollbar-track {  background-color: #999;}
+    .recipientWrapper::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+    .recipientWrapper::-webkit-scrollbar-thumb { height: 50px; background-color: #302da7; border-radius: 3px;}
+    .recipientWrapper::-webkit-scrollbar-corner { background-color: #999;}
+    .recipientWrapper::-webkit-resizer { background-color: #666;}
+
+    .printFormsContainer::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .printFormsContainer::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .printFormsContainer::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .printFormsContainer::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .printFormsContainer::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .printFormsContainer::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .printFormsContainer::-webkit-resizer {
+        background-color: #666;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .printFormsContainer {
+        padding: 42px 504px 20px 150px;
+    }
+
+    .headerTitle{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0.0025em;
+    }
+    .sampleImg{
+        height: 310px;
+        width: 445px;
+    }
+
+    .rightBlockWrapper {
+        min-width: 400px;
+        max-width: 600px;
+        width: 75%;
+    }
+}

@@ -1,0 +1,217 @@
+.backIconWrapper {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.backIcon {
+    height: 57px;
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    right: 40px;
+    width: 100%;
+    padding: 0 5%
+}
+
+.searchWrapper img{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.search {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.search::placeholder {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #B9B7C8;
+}
+
+.searchResultWrapper, .searchResultWrapperOff {
+    padding: 4px 16px 20px 17px;
+}
+
+.searchResult {
+    padding-top: 24px;
+}
+
+.searchResult > img {
+    top: 3px;
+    margin-right: 35px;
+}
+
+.mismatchedLetters {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #B9B7C8;
+}
+
+.matchedLetters {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px) {
+    .reviewsSearchContainer {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 2;
+        transform: translateX(0);
+        transition: .35s linear;
+        background: #FFFFFF;
+        visibility: visible;
+    }
+
+    .reviewsSearchContainerClose {
+        transform: translateX(+100%);
+        transition: all .35s linear;
+        visibility: hidden;
+    }
+
+    .headerContainer {
+        width: 100vw;
+        background: #FFFFFF;
+        top: 0;
+        height: 56px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #E2E0EF;
+    }
+
+    .search {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .searchIcon {
+        display: flex;
+        align-items: center;
+        right: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .backIconWrapper {
+        display: none;
+    }
+
+    .searchIcon {
+        position: absolute;
+        left: 25px;
+        top: 108px;
+    }
+
+    .reviewsSearchContainer {
+        position: absolute;
+        width: 100%;
+        top: -63px;
+
+    }
+
+    .searchWrapper{
+    }
+
+    .headerContainer {
+        margin: 0 120px 0 40px;
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .searchWrapper {
+        box-shadow: 0 5.65px 8px rgba(0, 0, 0, 0.0282725),
+        0 12.34px 23.87px rgba(0, 0, 0, 0.0417275), 0 12px 104px rgba(0, 0, 0, 0.07);
+
+        border-radius: 12px;
+        height: 56px;
+        width: 100%;
+        top: 90px;
+        margin-left: 46px;
+        background: #FFFFFF;
+
+    }
+
+    .searchWrapper img {
+        right: 23px;
+    }
+
+    .search {
+        width: 100%;
+        margin: 0 24px;
+        height: 100%;
+    }
+
+    .searchResult{
+        cursor: pointer;
+    }
+
+    .searchResultWrapper {
+        position: absolute;
+        background: #FFFFFF;
+
+        box-shadow: 0 5.65px 8px rgba(0, 0, 0, 0.0282725), 0 12.34px 23.87px rgba(0, 0, 0, 0.0417275), 0 12px 104px rgba(0, 0, 0, 0.07);
+        border-radius: 12px;
+        width: calc(100% - 205px);
+        top: 160px;
+        min-height: 200px;
+        margin: 0 46px;
+        z-index: 20;
+    }
+
+    .searchResultWrapperOff{
+        height: 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .headerContainer {
+        margin: 0 227px 0 40px;
+    }
+
+    .search {
+        margin: 0;
+    }
+
+    .searchResultWrapper {
+        top: 165px;
+        margin: 0 48px;
+        width: calc(100% - 315px);
+    }
+
+
+
+}

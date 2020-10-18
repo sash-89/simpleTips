@@ -1,0 +1,142 @@
+.inviteContainer{
+        width: 100%;
+        padding: 16px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        height: calc( 100vh - 56px);
+}
+
+.inviteText{
+    font-family: Inter;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+
+    margin-top: 40px;
+}
+.hr{
+    background: #E2E0EF;
+    margin-top: 24px;
+}
+
+.title{
+    margin-top: 21px;
+    padding-bottom: 13px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+}
+
+.bodyText{
+    font-family: Inter;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #6F6C86;
+}
+
+.btn{
+    width: 112px;
+    margin-top: 16px;
+}
+
+.inputWrapper{
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .inviteContainer{
+        height: calc( 100vh - 60px);
+        overflow-y: auto;
+    }
+
+    .inviteWrapper {
+        width: 400px;
+        margin: 0 auto;
+        right: 84px;
+    }
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+
+        padding-bottom: 20px;
+    }
+
+    .inviteText{
+        margin-top: 39px;
+        margin-bottom: 25px;
+    }
+
+    .btn{
+        margin: 23px 0 8px;
+    }
+
+    .hr{
+        margin-bottom: 29px;
+    }
+
+
+    .inviteContainer::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .inviteContainer::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .inviteContainer::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .inviteContainer::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .inviteContainer::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .inviteContainer::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .inviteContainer::-webkit-resizer {
+        background-color: #666;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .inviteWrapper {
+        width: 540px;
+        margin: 0 auto;
+        right: 128px;
+    }
+
+    .inputWrapper{
+        padding-right: 65px;
+    }
+
+}

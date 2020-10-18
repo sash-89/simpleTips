@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 1023px) {
+    .itemsWrapper {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .itemsWrapper {
+        display: flex;
+        margin: 17px 0 0 0;
+    }
+
+    .activeItem, .item {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        color: #FFFFFF;
+        background: #302DA7;
+        border-radius: 55px;
+        display: flex;
+        align-content: center;
+        height: 32px;
+        padding: 4px 14px 5px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .activeItem img, .item img{
+        margin-right: 9px;
+        top: 2px;
+    }
+
+    .item {
+        background: #E2E0EF;
+        color: #6F6C86;
+    }
+}

@@ -1,0 +1,162 @@
+.VCContainer {
+    z-index: 2;
+}
+
+
+.VCWrapper{
+    /*min-width: 272px;*/
+    /*max-width: 320px;*/
+    /*width: calc(100% - 48px);*/
+
+    width: 272px;
+    min-height: 168px;
+    max-height: 400px;
+    height: 100%;
+    background: url("../../assets/images/card/showData.png")100% 0/65.21px 65.21px no-repeat,
+                url("../../assets/images/card/card.png")0 0/100% 100% no-repeat;
+
+    /*box-shadow: 0 11.3088px 15.4211px rgba(0, 0, 0, 0.1),*/
+    /*            0 9.25264px 47.2913px rgba(0, 0, 0, 0.02),*/
+    /*            0 24.6737px 39.0667px rgba(0, 0, 0, 0.04);*/
+    border-radius: 18px;
+
+    margin: 0 auto;
+}
+
+.yourBalance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.393px;
+    line-height: 21px;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    padding: 18px 0 0 16px;
+}
+.balance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    padding: 8px 0 0 16px;
+}
+
+.cardNumb{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.28em;
+    color: #FFFFFF;
+    padding: 10px 0 0 5px;
+}
+
+.cardDate{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    color: #FFFFFF;
+    padding: 27px 0 0 16px;
+}
+
+
+@media screen and (min-width: 1024px){
+    .VCWrapper{
+        min-width: 305px;
+        max-width: 342px;
+        width: 50%;
+        min-height: 189px;
+        max-height: 212px;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+        background: url("../../assets/images/card/showData.png")100% 0/73px 73px no-repeat,
+        url("../../assets/images/card/card.png")0 0/100% 100% no-repeat;
+        box-shadow: 0 11.3088px 15.4211px rgba(0, 0, 0, 0.1),
+                    0 9.25264px 47.2913px rgba(0, 0, 0, 0.02),
+                    0 24.6737px 39.0667px rgba(0, 0, 0, 0.04);
+        /*border-radius: 16px;*/
+    }
+
+
+    .yourBalance{
+        font-size: 16.1394px;
+        line-height: 23px;
+        letter-spacing: 0.0015em;
+        padding-top: 21.5px;
+    }
+    .balance{
+        font-size: 27.6675px;
+        line-height: 32px;
+        letter-spacing: 0.0015em;
+        padding-top: 11.5px;
+    }
+
+    .cardNumb{
+        font-size: 17.836px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.31em;
+    }
+
+    .cardDate{
+        font-size: 16.1394px;
+        line-height: 18px;
+        letter-spacing: 0.001em;
+    }
+}
+
+@media screen and (min-width: 1919px) {
+    .VCWrapper{
+        min-width: 342px;
+        max-width: 450px;
+        width: 50%;
+        min-height: 212px;
+        max-height: 235px;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+        border-radius: 16px;
+
+        background: url("../../assets/images/card/showData.png")100% 0/82px 82px no-repeat,
+        url("../../assets/images/card/card.png")0 0/100% 100% no-repeat;
+    }
+
+
+    .yourBalance{
+        font-size: 18.0976px;
+        line-height: 26px;
+        letter-spacing: 0.0015em;
+        padding-top: 24px;
+    }
+    .balance{
+        font-size: 31.0244px;
+        line-height: 36px;
+        letter-spacing: 0.0015em;
+        padding-top: 12.5px;
+    }
+
+    .cardNumb{
+        font-size: 20px;
+        line-height: 31px;
+        text-align: center;
+        letter-spacing: 0.31em;
+        padding-top: 13px;
+
+    }
+
+    .cardDate{
+        font-weight: 600;
+        font-size: 18.0976px;
+        line-height: 21px;
+        letter-spacing: 0.001em;
+    }
+}

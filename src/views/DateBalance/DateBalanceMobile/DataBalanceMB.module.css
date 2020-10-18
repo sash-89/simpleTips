@@ -1,0 +1,134 @@
+.dateMenuWrapper{
+    background: rgb(247,247,247); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(232,232,232,1) 2%, rgba(211,211,211,1) 5%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(232,232,232,1) 2%,rgba(211,211,211,1) 5%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(247,247,247,1) 0%,rgba(232,232,232,1) 2%,rgba(211,211,211,1) 5%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#d3d3d3',GradientType=0 );
+
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+
+}
+
+.dateMenuWrapperOpen {
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+
+    transform: translateY(50%);
+    transition: .3s linear;
+    will-change: transform;
+    /*animation: menuUp .3s linear forwards;*/
+    /*z-index: 4;*/
+}
+.dateMenuWrapperClose{
+    /*top: +100%;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*z-index: 0;*/
+    /*visibility: hidden;*/
+    transition: .35s linear;
+    transform: translateY(100%);
+    will-change: transform;
+
+
+
+    /*visibility: visible;*/
+    /*top: +150%;*/
+    /*!*min-height: 100vh;*!*/
+    /*width: 100vw;*/
+    /*animation: menuDown .3s linear ;*/
+    /*background: rgba(215, 215, 215, 0.33);*/
+}
+
+/*@keyframes menuUp {*/
+/*    0%{*/
+/*        top: +150%;*/
+/*    }*/
+/*    100%{*/
+/*        position: fixed;*/
+/*        visibility: visible;*/
+/*        top: 50%;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        z-index: 5;*/
+/*    }*/
+/*}*/
+/*@keyframes menuDown {*/
+/*    0%{*/
+/*        position: fixed;*/
+/*        top: 50%;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        z-index: 5;*/
+/*    }*/
+/*    100%{*/
+/*        top: +150%;*/
+/*        z-index: 2;*/
+/*        !*visibility: hidden;*!*/
+/*    }*/
+/*}*/
+
+/*.choosingDateCls{*/
+/*    top: 50%!important;*/
+/*}*/
+
+
+.dateMenuHeader{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+
+    padding: 16px 18.15px 18px 20.25px;
+    display: flex;
+    justify-content: space-between;
+}
+.dateMenuHeader span{
+    width: 114px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dateMenuHeader span:last-child{
+    width: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+.dateMenuHeader img:first-child{
+    height: 15.5px ;
+}
+.dateMenuHeader span:last-child img:first-child{
+    height: 14px;
+    margin-bottom: 1px;
+}
+
+.choosingBalanceInfo{
+    background: #FFFFFF;
+    /*border-top: 2px solid rgba(48, 45, 167, 0.11);*/
+    /*box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.0282725), 0 -12px 23.87px rgba(0, 0, 0, 0.0417275), 0 -12px 104px rgba(0, 0, 0, 0.07);*/
+    border-radius: 16px 16px 0 0;
+}
+.tabsContainerCls{
+    border-radius: 16px 16px 0 0;
+}
+.tabsHeaderCls{
+    padding: 0;
+}
+.underlineCls{
+    width: 33.333%;
+    left: 0;
+}

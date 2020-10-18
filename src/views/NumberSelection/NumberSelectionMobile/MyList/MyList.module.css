@@ -1,0 +1,72 @@
+.MyListContainer{
+    height: 100%;
+    background: transparent;
+    padding: 0 8px 30px 8px;
+}
+
+/*.myList{*/
+/*    padding-top: 24px;*/
+/*}*/
+
+.floor {
+    height: 48px;
+    background: #E2E0EF;
+    border-radius: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+
+    padding: 0 0 0 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.room{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    border-bottom: 1px solid #E2E0EF;
+    padding: 0 16px;
+
+}
+
+.room > span{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.room > span:last-child{
+    letter-spacing: 0.001em;
+    color: #6F6C86;
+}
+
+@media screen and (max-width: 1023px) {
+    .MyListContainer{
+        height: calc(100vh - 104px);
+        /*overflow-y: auto;*/
+        background: #FFFFFF;
+    }
+
+    .floor{
+        background: #FAF9FF;
+    }
+
+
+    .room > span:last-child{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+}

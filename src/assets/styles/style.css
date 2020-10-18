@@ -1,0 +1,466 @@
+/*FONT START*/
+@font-face {
+    font-family: 'Inter';
+    /*font-display: swap;*/
+    src: url('../fonts/Inter-SemiBold-600.eot');
+    src: local('☺'), url('../fonts/Inter-SemiBold-600.woff') format('woff'), url('../fonts/Inter-SemiBold-600.ttf') format('truetype'), url('../fonts/Inter-SemiBold-600.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    /*font-display: swap;*/
+    src: url('../fonts/Inter-Medium-500.eot');
+    src: local('☺'), url('../fonts/Inter-Medium-500.woff') format('woff'), url('../fonts/Inter-Medium-500.ttf') format('truetype'), url('../fonts/Inter-Medium-500.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    /*font-display: swap;*/
+    src: url('../fonts/Inter-Regular-400.eot');
+    src: local('☺'), url('../fonts/Inter-Regular-400.woff') format('woff'), url('../fonts/Inter-Regular-400.ttf') format('truetype'), url('../fonts/Inter-Regular-400.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    /*font-display: swap;*/
+    src: url('../fonts/Montserrat-Normal.eot');
+    src: local('Montserrat'), url('../fonts/Montserrat-Normal.woff') format('woff'), url('../fonts/Montserrat-Normal.ttf') format('truetype'), url('../fonts/Montserrat-Normal.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.eot');
+    src: local('☺'), url('../fonts/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins-Bold.ttf') format('truetype'), url('../fonts/Poppins-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*FONT END*/
+
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+}
+
+/*body {*/
+/*    font-family: -apple-system, BlinkMacSystemFont,*/
+/*    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+/*}*/
+
+html,
+body {
+    overflow: hidden;  /*<==*/
+    overscroll-behavior: none;
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/*MOBILE MEDIA START*/
+@media screen and (max-width: 1023px) {
+    html,
+    body {
+        overflow: hidden;  /*<==*/
+        overscroll-behavior: none;
+        padding-top: env(safa-area-inset-top);
+        position: relative;
+        height: 100%;
+        width: 100vw;
+        /*-webkit-appearance: none;*/
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /*#root {*/
+    /*    !*overflow: hidden;*!*/
+    /*    overscroll-behavior: none;*/
+    /*    height: 100%;*/
+    /*    width: 100vw;*/
+    /*    !*max-height: 500%;*!*/
+    /*}*/
+
+    .AppContainer {
+        background: #FFFFFF;
+        z-index: 1;
+        -webkit-tap-highlight-color: transparent;
+        /*height: 100vh;*/
+        /*position: fixed;   !*<==*!*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*bottom: 0;*/
+        /*left: 0;*/
+        /*overflow: hidden;   !*<==*!*/
+    }
+
+    .AppWrapper, .AppWrapperClose, .AppWrapperUp {
+        z-index: 1;
+        background: #FFFFFF;
+        will-change: transform;
+        height: 100vh;
+        /*grid-area: content;*/
+        transform: translate(0);
+        transition: .35s linear;
+        /*overflow: hidden;*/
+
+
+        /*display: grid;*/
+        /*grid-template-areas: "header" "content";*/
+        /*grid-template-rows: 56px 1fr;*/
+        /*grid-template-columns: 1fr;*/
+    }
+
+    .AppWrapperClose {
+        transform: translateX(+50%);
+        transition: .35s linear;
+    }
+
+    .AppWrapperUp {
+        transform: translateY(-50%);
+        transition: .35s linear;
+    }
+
+    .Backdrop, .BackdropOff {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.26);
+        transition: .35s linear;
+        z-index: 4;
+    }
+
+    .BackdropOff {
+        transition: .2s linear .3s;
+        z-index: 4;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .Mobile {
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .Desktop {
+        display: none;
+    }
+}
+
+/*DESKTOP MEDIA START*/
+@media screen and (min-width: 1024px) {
+    .Mobile {
+        display: none;
+    }
+
+    .AppContainer, .AppContainerIOS {
+        overflow: hidden;
+        background: #FFFFFF;
+        height: -webkit-fill-available;
+        height: 100vh;
+        position: fixed;
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 60px 1fr;
+        grid-template-columns: 118px 1fr;
+        grid-template-areas: "menu header" "menu content";
+        z-index: 0;
+        -webkit-transform: translate3d(0,0,0);
+        -webkit-overflow-scrolling: touch;
+
+    }
+
+    .AppContainerIOS{
+        position: relative;
+    }
+
+    .AppWrapper, .AppWrapperClose, .AppWrapperUp {
+        z-index: 10;
+        background: #FFFFFF;
+        /*height: -webkit-fill-available;*/
+        /*height: calc(100vh - 60px);*/
+        width: calc(100vw - 118px);
+        grid-area: content;
+
+    }
+
+
+    /*.AppWrapper::-webkit-scrollbar {*/
+    /*    width: 3px;*/
+    /*    height: 3px;*/
+    /*}*/
+
+    /*.AppWrapper::-webkit-scrollbar-button {*/
+    /*    background-color: rgba(95, 148, 226, 0.53);*/
+    /*    height: 8px;*/
+    /*    width: 5px;*/
+    /*    border-radius: 5px;*/
+    /*}*/
+
+    /*.AppWrapper::-webkit-scrollbar-track {*/
+    /*    background-color: #999;*/
+    /*}*/
+
+    /*.AppWrapper::-webkit-scrollbar-track-piece {*/
+    /*    background-color: #ffffff;*/
+    /*}*/
+
+    /*.AppWrapper::-webkit-scrollbar-thumb {*/
+    /*    height: 50px;*/
+    /*    background-color: #302da7;*/
+    /*    border-radius: 3px;*/
+    /*}*/
+
+    /*.AppWrapper::-webkit-scrollbar-corner {*/
+    /*    background-color: #999;*/
+    /*}*/
+
+    /*.AppWrapper::-webkit-resizer {*/
+    /*    background-color: #666;*/
+    /*}*/
+
+}
+
+
+/*ANIMATION MOBILE*/
+
+@media screen and (max-width: 1023px) {
+
+    .outRight .enter, .outRight .appear,
+    .slideIn .enter, .slideIn .appear,
+    .mobileSlide .enter, .mobileSlide .appear {
+        transform: translateX(100%);
+        transition: transform .4s ease-in-out;
+
+        will-change: transform;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .outRight .enter-active,
+    .outRight .appear-active,
+    .slideIn .enter-active,
+    .slideIn .appear-active,
+    .mobileSlide .enter-active,
+    .mobileSlide .appear-active {
+        transform: translateX(0);
+        transition: transform .4s ease-in-out;
+
+        will-change: transform;
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .slideIn .exit,
+    .mobileSlide .exit {
+        transition: transform .4s ease-in-out;
+
+        will-change: transform;
+        transform: translateX(0);
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .slideIn .exit-active,
+    .mobileSlide .exit-active {
+        transform: translateX(100%);
+        transition: transform .4s ease-in-out;
+
+        will-change: transform;
+
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .outRight .exit {
+        transition: transform .4s ease-in-out;
+
+        will-change: transform;
+        transform: translateX(0);
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .outRight .exit-active {
+        transform: translateX(-100%);
+        transition: transform .4s ease-in-out;
+        will-change: transform;
+
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+
+
+    .outLeft .enter, .outLeft .appear {
+        transform: translateX(-100%);
+        transition: transform .4s ease-in-out;
+        will-change: transform;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .outLeft .enter-active,
+    .outLeft .appear-active {
+        transform: translateX(0);
+        transition: transform .4s ease-in-out;
+        will-change: transform;
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .outLeft .exit {
+        transition: transform .4s ease-in-out;
+        will-change: transform;
+        transform: translateX(0);
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+
+    }
+
+    .outLeft .exit-active {
+        transform: translateX(+100%);
+        transition: transform .4s ease-in-out;
+        will-change: transform;
+
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+}
+
+/*ANIMATION DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .slideIn .enter, .slideIn .appear,
+    .slideIn .enter-active,
+    .slideIn .appear-active,
+    .slideIn .exit,
+    .slideIn .exit-active {
+        background: #FFFFFF;
+        border-radius: 24px 0 0 24px;
+
+        will-change: transform;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: -webkit-fill-available;
+        height: 100vh;
+        width: 414px;
+    }
+
+    .slideIn .enter, .slideIn .appear {
+        transform: translateX(100%);
+        transition: transform .4s ease-in-out;
+
+
+    }
+
+    .slideIn .enter-active,
+    .slideIn .appear-active {
+        transform: translateX(0);
+        transition: transform .4s ease-in-out;
+    }
+
+    .slideIn .exit {
+        transition: transform .4s ease-in-out;
+        transform: translateX(0);
+    }
+
+    .slideIn .exit-active {
+        transform: translateX(100%);
+        transition: transform .4s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .slideIn .enter, .slideIn .appear,
+    .slideIn .enter-active,
+    .slideIn .appear-active,
+    .slideIn .exit,
+    .slideIn .exit-active {
+        background: #FFFFFF;
+        border-radius: 24px 0 0 24px;
+        width: 430px;
+    }
+}

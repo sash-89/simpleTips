@@ -1,0 +1,171 @@
+@media screen and (max-width: 372px) {
+    .after372 {
+        display: none;
+    }
+
+    .underlineCls {
+        left: 15px;
+        width: 171px;
+    }
+
+    .tabsHeaderCls > .tabTittleCls:first-child {
+        display: grid;
+        justify-items: center;
+        position: absolute;
+        top: 13px;
+        min-width: 171px;
+        right: 110px;
+    }
+
+    .tabsHeaderCls > .tabTittleCls:nth-child(2) {
+        position: absolute;
+        min-width: 138px;
+        top: 13px;
+        left: 126px;
+    }
+
+    .tabsHeaderCls > .tabTittleActiveCls:nth-child(2) {
+        position: absolute;
+        display: grid;
+        justify-items: end;
+        width: 138px;
+        top: 13px;
+        right: 16px;
+    }
+
+    .tabsHeaderCls > .tabTittleActiveCls:first-child {
+        position: absolute;
+        display: flex;
+        justify-self: flex-start;
+        min-width: 175px;
+        left: 16px;
+        top: 13px;
+    }
+
+}
+
+
+@media screen and (min-width: 373px) {
+    .under372 {
+        display: none;
+    }
+}
+
+.unpin span {
+    margin-left: 2px;
+    color: #E70909;
+}
+
+.unpin img {
+    margin-right: 36px !important;
+}
+
+.delete span {
+    color: #E70909;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .title {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .after372{
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+
+    .tabsContainerCls {
+        padding: 0 102px 0 63px;
+    }
+
+    .title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+
+        padding: 36px 0 20px 63px;
+    }
+
+    .roomNumber{
+        display: none!important;
+    }
+
+    .tabsHeaderCls{
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .tabsHeaderCls > div:nth-child(2){
+        left: 50px;
+    }
+
+    .underlineCls{
+        left: 0;
+        right: calc(100% - 170.4px);
+    }
+
+    .modalClassName{
+        width: 560px;
+    }
+
+    .after372::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .after372::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .after372::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .after372::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .after372::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .after372::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .after372::-webkit-resizer {
+        background-color: #666;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .tabsContainerCls {
+        padding: 0 504px 0 150px;
+    }
+
+    .title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        color: #0D2221;
+
+        padding: 42px 0 17px 150px;
+    }
+
+    .tabsContentCls{
+        padding: 0;
+    }
+}

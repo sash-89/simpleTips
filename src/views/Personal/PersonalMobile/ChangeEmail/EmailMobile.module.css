@@ -1,0 +1,136 @@
+.body{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+}
+
+.button{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    margin-top: 22px;
+    width: 136px;
+}
+
+.errorMessage{
+    color: #ff563a!important;
+}
+
+@media screen and (max-width: 1023px) {
+    .changeEmailContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        height: 100%;
+        z-index: 25;
+    }
+
+    .changeEmailWrapper{
+        padding: 10px 15px;
+    }
+    .body{
+        margin-top: 21px;
+        padding-right: 10px;
+    }
+    .errorMessage{
+        margin:8px 0 0 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .changeEmailContainer {
+        position: absolute;
+        width: 370px;
+        left: 377px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+
+    .headerCls{
+        border: none;
+        padding-top: 41px;
+        right: 78px;
+    }
+
+    .headerCls h2{
+        right: 67px;
+    }
+
+    .headerCls img{
+        height: 76px;
+    }
+
+    .changeEmailWrapper {
+        padding-top: 37px;
+    }
+
+    .changeEmailWrapper > div{
+        margin-bottom: 15px;
+    }
+
+    .button {
+        margin-top: 32px;
+    }
+
+    .errorMessage{
+        margin: 8px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .changeEmailContainer {
+        position: absolute;
+        width: 440px;
+        left: 505px;
+    }
+    .changeEmailWrapper{
+        padding-top: 17px;
+    }
+}
+
+
+
+
+.confirmEmailContainer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.homeBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.confirmEmailWrapper h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px) {
+    .confirmEmailWrapper h2 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+    }
+}

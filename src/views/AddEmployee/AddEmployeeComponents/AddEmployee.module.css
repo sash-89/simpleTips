@@ -1,0 +1,134 @@
+.floorNumberWrapper{
+    padding: 16px 16px 0;
+
+}
+
+.floorNumber{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    margin-bottom: 20px;
+}
+.roomNumberWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+}
+.roomNumber{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.employee{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #6F6C86;
+}
+
+.free{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #EB4C3A;
+}
+
+.hrLine{
+    border-bottom: 1px solid #E2E0EF;
+    margin-bottom: 20px;
+}
+
+.inputFieldWrapper{
+    padding: 0 16px;
+}
+
+.text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+    margin-top: 11px;
+}
+
+.BtnWrapper{
+    padding-top: 21px;
+
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.42);
+}
+
+.Btn{
+    width: 153px;
+    margin-left: 16px;
+}
+
+/*.Btn:disabled{*/
+/*    opacity: 0.32;*/
+/*}*/
+
+@media screen and (max-width: 1023px) {
+    .attachEmployeeContainer {
+        background: #FFFFFF;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        z-index: 14;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .attachEmployeeContainer{
+        background: #FFFFFF;
+        position: fixed;
+        width: 414px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 20;
+        height: -webkit-fill-available;
+        height: 100vh;
+        border-radius: 24px 0 0 24px;
+    }
+
+    .text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .attachEmployeeContainer {
+        width: 430px;
+    }
+}

@@ -1,0 +1,55 @@
+.allBalanceDataWrapper {
+    padding: 5px 32px 0 16px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(136px , 200px));
+    grid-row-gap: 21px;
+}
+
+.balanceData {
+    height: 43px;
+}
+
+.balance {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #302DA7;
+}
+
+.title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+    padding-top: 2px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .allBalanceDataWrapper {
+        padding: 0;
+        grid-template-columns: repeat(2, minmax(162px , 200px));
+    }
+}
+@media screen and (min-width: 1920px) {
+    .allBalanceDataWrapper {
+        padding: 5px 0 0 0;
+        grid-template-columns: repeat(2, minmax(192px , 230px));
+        grid-row-gap: 32px;
+    }
+
+    .balance {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .title {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

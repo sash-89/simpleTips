@@ -1,0 +1,249 @@
+/*.currentReviewsWrapper{*/
+/*    position: fixed;*/
+/*    background: #FFFFFF;*/
+/*    height: 100vh;*/
+/*    width: 100vw;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    z-index: 5;*/
+/*}*/
+
+/*.currentReviewsWrapperOpen {*/
+/*    transform: translateY(50%);*/
+/*    transition: .3s linear;*/
+/*}*/
+/*.currentReviewsWrapperClose{*/
+/*    transform: translateY(100%);*/
+/*    transition: .3s linear;*/
+/*}*/
+
+.reviewNameWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    padding: 0 16px;
+
+}
+.reviewNameWrapper>h6{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+}
+.reviewNameWrapper div{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.004em;
+    color: #B9B7C8;
+    top: 4px;
+}
+
+.code{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+    padding: 0 16px 7px;
+}
+
+.starWrapper{
+    padding: 0 16px 12px;
+}
+
+.starWrapper img{
+    margin-top: 3px;
+}
+
+.greenStar, .redStar{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #1BCC57;
+    margin-left: 14px;
+    top: -4px;
+}
+
+.redStar{
+    color: #EB4C3A;
+}
+
+.hrLine{
+    border-top: 1px solid #E2E0EF;
+}
+
+.reviewText{
+    padding: 15px 25px 50px 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px) {
+    .currentReviewsWrapper{
+        position: fixed;
+        background: #FFFFFF;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        z-index: 5;
+    }
+
+    .currentReviewsWrapperOpen {
+        transform: translateY(50%);
+        transition: transform .3s linear;
+    }
+    .currentReviewsWrapperClose{
+        transform: translateY(100%);
+        transition: .3s linear;
+        visibility: hidden;
+    }
+
+    .review{
+        padding: 15px 0 16px;
+        background: #FFFFFF;
+        height: calc(100vh - 56px);
+        overflow-y: auto;
+    }
+
+    .closeIcon{
+       display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .currentReviewsWrapperOpen{
+        position: fixed;
+        display: flex;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        z-index: 22;
+
+        /*margin: 22px 0;*/
+
+    }
+
+    .currentReviewsWrapperClose{
+        position: fixed;
+        visibility: hidden;
+
+    }
+
+    .review{
+        padding: 33px 0 30px;
+        background: #FFFFFF;
+        border-radius: 16px;
+        max-height: 582px;
+        min-height: 300px;
+        height: 80%;
+        width: 676px;
+        overflow: hidden;
+        z-index: 23;
+    }
+
+    .closeIcon{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+    }
+
+    .reviewNameWrapper>h6 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        color: #0D2221;
+        padding: 0 16px;
+    }
+
+    .reviewNameWrapper>div {
+        position: absolute;
+        right: 32px;
+        top: 71px;
+    }
+
+    .code{
+        padding: 0 33px 10px;
+    }
+
+    .starWrapper{
+        padding: 0 33px 12px;
+    }
+
+    .reviewText {
+        padding: 47px 30px 80px 30px;
+        text-align: justify;
+        height: calc(100% - 50px);
+        overflow-y: auto;
+    }
+
+
+    .reviewText::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .reviewText::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .reviewText::-webkit-scrollbar-track {
+        background-color: #999;
+        margin-bottom: 40px;
+
+    }
+
+    .reviewText::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+
+    }
+
+    .reviewText::-webkit-scrollbar-thumb {
+        background-color: #302da7;
+        border-radius: 3px;
+
+    }
+
+    .reviewText::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .reviewText::-webkit-resizer {
+        background-color: #666;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .review{
+        width: 550px;
+    }
+}

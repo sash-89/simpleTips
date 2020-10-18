@@ -1,0 +1,167 @@
+.AddRangeOfNumberWrapper{
+    padding: 24px 16px 0 16px;
+}
+
+
+.inputFieldWrapper {
+    margin: 31px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addRangeOfNumberSecondWrapper{
+    height: 0;
+    overflow: hidden;
+}
+.addRangeOfNumberSecondWrapperOpen{
+    animation: WrapperOpen .3s linear forwards;
+}
+
+.addRangeOfNumberSecondWrapperClose{
+    animation: WrapperClose .3s linear forwards;
+
+}
+
+@keyframes WrapperOpen {
+    from {
+        height: 0;
+        overflow: hidden;
+    }
+    to {
+        height: 184px;
+        overflow: visible;
+    }
+}
+
+@keyframes WrapperClose {
+    from {
+        height: 184px;
+        overflow: hidden;
+
+    }
+    to {
+        height: 1px;
+        overflow: hidden;
+
+    }
+}
+
+.inputFieldSecondWrapper {
+    margin: 31px 40px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputFieldWithChooseSecondWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputFieldWithChooseSecondWrapper > img{
+    width: 20px;
+    height: 20px;
+    margin: 0 2px 0 18px;
+}
+.range{
+    min-width: 124px;
+    max-width: 200px;
+    width: 40%;
+}
+
+.rangeSecond{
+    min-width: 104px;
+    max-width: 200px;
+    width: 40%;
+}
+
+.line {
+    width: 24px;
+    border-top: 1px solid #6F6C86;
+    top: 28px;
+    margin: 0 8px;
+}
+
+.child{
+    padding: 22px 0;
+    height: 304px;
+    box-shadow: 0 5.65px 8px rgba(0, 0, 0, 0.0282725), 0 12.34px 23.87px rgba(0, 0, 0, 0.0417275), 0 12px 104px rgba(0, 0, 0, 0.07);
+}
+.numbersWrapper{
+    padding: 12px 16px 0 16px;
+    overflow-y: auto;
+    height: 248px;
+}
+.number{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    padding-bottom: 28px;
+}
+.number:last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    padding-bottom: 12px;
+}
+.hrLine{
+    border-bottom: 1px solid #E2E0EF;
+    margin-bottom: 20px;
+}
+.addRangeWrapper{
+    padding:5px 0 25px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 17px;
+}
+
+.addRangeWrapper img{
+   margin: 0 16px 0 4px;
+
+}
+
+.BtnWrapper {
+    margin-right: 160px;
+}
+
+@media screen and (max-width: 1023px) {
+    .AddRangeOfNumberContainer{
+        background: #FFFFFF;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        z-index: 14;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .AddRangeOfNumberContainer{
+        background: #FFFFFF;
+        position: fixed;
+        width: 414px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 20;
+        height: -webkit-fill-available;
+        height: 100vh;
+        border-radius: 24px 0 0 24px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .AddRangeOfNumberContainer {
+        width: 430px;
+    }
+}

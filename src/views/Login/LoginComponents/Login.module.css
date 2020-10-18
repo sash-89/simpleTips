@@ -1,0 +1,218 @@
+.numberTitle{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+}
+
+.newCode{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 33px;
+}
+.reSendCode{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #E2E0EF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    background: none;
+    border: none;
+}
+
+.loginBg img {
+    width: 100%;
+    position: relative;
+    top: 5px;
+}
+
+.phoneInputField{
+    margin-top: 20px;
+}
+
+.errorMessage, .smsCodeErrorMessage{
+    color: #ff563a;
+}
+
+@media screen and (min-width: 1024px) {
+    .signUpContainer{
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 25;
+        background: url("../../../assets/images/login/login-bg-desktop.png")center/100% 100% no-repeat, #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 155px;
+    }
+
+    .tabsContainerCls{
+        width: 447px;
+        background: transparent;
+        overflow: visible;
+
+    }
+
+    .tabsHeaderCls{
+        justify-content: flex-start;
+    }
+
+    .tabsHeaderCls > div{
+        width: 145px;
+        right: 17px;
+    }
+    .tabsHeaderCls > div:nth-child(2){
+        margin-left: 15px;
+    }
+
+    .underlineCls{
+        left: -1px;
+        right: 303px;
+    }
+
+    .loginContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*height: 300px;*/
+        padding-top: 40px;
+    }
+
+    .title{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 43px;
+        letter-spacing: 0.0015em;
+        color: #302DA7;
+
+        width: 447px;
+        padding: 145px 0 44px;
+    }
+
+    .loginBg{
+        display: none;
+    }
+
+    .numberTitle{
+        padding-bottom: 4px;
+    }
+
+    .loginBtn{
+        margin-top: 20px;
+        margin-right: 350px;
+    }
+
+    .passWrap {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .newCodeWrapper{
+        position: absolute;
+        padding-left: 16px;
+        top: 56px;
+    }
+    .passWrap fieldset{
+        margin-right: 10px;
+    }
+    .passWrap button{
+        width: 160px;
+        left: 14px;
+    }
+
+    .errorMessage{
+        top: 8px;
+    }
+    .smsCodeErrorMessage{
+        position: absolute;
+        top: 65px;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    .signUpContainer{
+        padding: 164px 0 0 3px;
+    }
+
+}
+
+
+@media screen and (max-width: 1023px) {
+    .numberTitle{
+        padding: 24px 0 5px;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .loginWrapper{
+        width: 100%;
+        padding: 16px;
+        background: #ffffff;
+    }
+
+    .loginContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 104px);
+    }
+
+    .phoneInputField{
+        margin: 20px 0 23px;
+    }
+
+    .passWrap {
+        width: 100%;
+    }
+
+    .loginBtn{
+        margin: 4px 95px 0 95px;
+    }
+
+    .reSendBtn{
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .errorMessage{
+        margin-left: 10px;
+    }
+
+    .smsCodeErrorMessage{
+        margin: 20px 0 10px 10px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1100px) {
+    .signUpContainer {
+        padding-left: 123px;
+    }
+}

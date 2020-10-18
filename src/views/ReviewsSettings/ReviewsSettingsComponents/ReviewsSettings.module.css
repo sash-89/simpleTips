@@ -1,0 +1,94 @@
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.text p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.inputs {
+    margin-bottom: 30px;
+}
+
+.button {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 32px;
+    flex: none;
+    order: 0;
+    align-self: center;
+    width: 131px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .reviewsSettingsContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 14;
+    }
+
+    .contentWrapper{
+        padding: 31px 15px;
+    }
+
+    .text p{
+        margin-right: 10px;
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .reviewsSettingsContainer {
+        position: absolute;
+        width: 370px;
+        left: 377px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        padding: 35px 0 35px;
+    }
+
+    .text p{
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .reviewsSettingsContainer {
+        position: absolute;
+        width: 440px;
+        left: 505px;
+    }
+}

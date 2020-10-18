@@ -1,0 +1,36 @@
+.weeklyBalanceWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 22.3px 17px 16px ;
+}
+
+.weeklyBalance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    padding-top: 2px;
+}
+
+.totalBalance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #302DA7;
+
+    text-decoration: none;
+}
+
+.ArrowViolet {
+    width: 12px;
+    height: 8px;
+    margin:0 0 3px 14px;
+    top: 1px;
+}

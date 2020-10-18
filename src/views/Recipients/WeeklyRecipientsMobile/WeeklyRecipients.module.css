@@ -1,0 +1,36 @@
+.weeklyRecipientsMBContainer {
+    padding: 9px 0 0 0;
+}
+
+
+.sortByTypeWrapper {
+    display: flex;
+    justify-content: space-around;
+    background: #302DA7;
+    border-radius: 55px;
+    height: 32px;
+    margin: 7px 0 8px 16px;
+    width: max-content;
+    padding: 4px 5px 4px 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+}
+
+.sortByTypeWrapper img {
+    width: 20px;
+    margin-left: 15px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .sortByTypeWrapper {
+        display: none;
+    }
+}

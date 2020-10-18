@@ -1,0 +1,239 @@
+.balanceByDateContainer {
+    background: #FFFFFF;
+    padding-top: 2px;
+    /*overflow-y: auto;*/
+    /*height: calc(100vh - 100px);*/
+    padding-bottom: 70px;
+
+    border-radius: 16px 16px 0 0;
+}
+
+.balanceByDateWrapper {
+    display: none;
+}
+
+.dateWrapper {
+    display: flex;
+    justify-content: space-around;
+    background: #302DA7;
+    border-radius: 55px;
+    height: 32px;
+    margin: 13px 0 10px 16px;
+    width: max-content;
+    padding: 4px 5px 4px 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+}
+.dateWrapper img{
+    width: 20px;
+    margin-left: 36px;
+    cursor: pointer;
+}
+
+.balanceWrapper{
+    height: calc(100vh - 110px);
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 76px;
+}
+
+.date{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+
+    background: #FAF9FF;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 23px 8px 9px 8px;
+}
+
+.tips{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    height: 47px;
+    border-bottom: 1px solid  #E2E0EF;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.tipsBalance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #EB4C3A;
+}
+
+.clock{
+    width: 16.25px;
+    margin-right: 11px;
+}
+
+.serviceCommission{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+
+    height: 47px;
+    border-bottom: 1px solid  #E2E0EF;
+    margin: 0 8px 2px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 16px 0 16px;
+}
+
+.serviceCommission>span:last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px) {
+    .balanceByDateWrapper {
+        display: block;
+    }
+
+    .weekBalanceDataWrapper {
+        display: block;
+    }
+
+    .transactionsWrapper{
+        display: none;
+    }
+
+    .date{
+        padding: 14px 16px;
+        margin: 23px 8px 9px 8px;
+    }
+
+    .tips{
+        padding: 0 16px;
+        margin: 0 8px;
+    }
+
+    .serviceCommission{
+        margin: 0 8px 2px 8px;
+        padding: 2px 16px 0 16px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .balanceByDateContainer,.balanceWrapper{
+        overflow: hidden;
+    }
+
+    .transactionsWrapper{
+        display: flex;
+        margin: 26px 0 0 24px;
+    }
+
+    .activeTransactions, .transactions{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        color: #FFFFFF;
+        background: #302DA7;
+        border-radius: 55px;
+        display: flex;
+        align-content: center;
+        height: 32px;
+        padding: 4px 14px 5px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .transactions{
+        background: #E2E0EF;
+        color: #6F6C86;
+    }
+
+    .activeTransactions img, .transactions img{
+        margin-right: 5px;
+        top: 1px;
+    }
+    .activeTransactions:first-child img, .transactions:first-child img{
+        margin-right: 5px;
+        top: 3px;
+    }
+
+    .date{
+        margin: 22px 0 9px 25px;
+    }
+
+    .tips{
+        padding: 0 15px;
+        margin:0 0 0 25px;
+    }
+
+    .serviceCommission{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        margin: 0 0 0 25px;
+    }
+
+    .dateWrapper {
+        margin: 5px 0 0 24px;
+    }
+    .balanceWrapper {
+        margin-top: 8px;
+        padding-top: 0;
+        border-top: 1px solid #E2E0EF;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .balanceWrapper {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .dateWrapper {
+        margin: 5px 0 0 33px;
+    }
+}
+
+
+
+
+
+

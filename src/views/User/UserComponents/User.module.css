@@ -1,0 +1,229 @@
+.avatarDiv{
+    width: 100%;
+    text-align: center;
+}
+.avatarIMG{
+    margin-top: 24px;
+    width: 88px;
+    height: 88px;
+}
+
+.avatarName{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bottomDiv{
+    height: calc( 100vh - 223px);
+    padding: 10px 0 0 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link, .activeLink{
+    text-decoration: none;
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: 20px 1fr;
+    margin-bottom: 8px;
+    padding: 0 15px;
+
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+
+}
+
+.link span, .activeLink span{
+    top: 1px;
+    margin-left: 34px;
+}
+
+
+.circle{
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+
+.edit{
+    border-radius: 50%;
+    background: #F6C144;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+
+.logOutWrapper{
+    padding-left: 17px;
+    padding-bottom: 62px;
+    cursor: pointer;
+}
+
+.logOutWrapper img{
+    padding-right: 34px;
+}
+
+.logOut{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #E70909;
+}
+
+@media screen and (max-width: 1023px){
+    .userContainer{
+        position: absolute;
+        top: 56px;
+    }
+
+    .avatarDiv {
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 87%, rgba(216, 216, 216, 1) 100%, rgba(216, 216, 216, 1) 100%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 87%, rgba(216, 216, 216, 1) 100%, rgba(216, 216, 216, 1) 100%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 87%, rgba(216, 216, 216, 1) 100%, rgba(216, 216, 216, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d8d8d8', GradientType=0);
+
+        width: 100vw;
+        padding-bottom: 37px;
+
+    }
+
+    .avatarWrapper{
+        margin: 0 auto;
+        width: 88px;
+    }
+
+    .edit{
+        right: -5px;
+        top: 22px;
+    }
+
+    .bottomDiv {
+        margin-top: -15px;
+        border-radius: 16px 16px 0 0;
+        border: 1px solid rgb(238, 238, 238);
+        border-bottom: none;
+        background: white;
+        padding: 8px 0 0 2px;
+    }
+
+    .link{
+        padding: 18px 15px 18px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .userContainer {
+        position: absolute;
+        min-height: calc(100vh - 60px);
+        height: max-content;
+        width: 275px;
+        background: #FAF9FF;
+        border-radius: 0 24px 24px 0;
+        z-index: 1;
+    }
+
+    .avatarDiv{
+        padding-top: 25px;
+    }
+
+    .avatarIMG{
+        width: 104px;
+        height: 104px;
+    }
+
+    .edit{
+        right: 85px;
+        top: 24px;
+    }
+
+    .avatarName {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.0015em;
+        color: #0D2221;
+        margin-top: 5px;
+        word-break: break-word;
+    }
+
+    .bottomDiv {
+        margin-top: 33px;
+        height: calc(100vh - 345px);
+    }
+
+    .link, .activeLink{
+        height: 56px;
+        width: 236px;
+    }
+
+    .activeLink{
+        background: #E2E0EF;
+        border-radius: 12px;
+    }
+
+    .activeLink span{
+        color: #302DA7;
+    }
+
+    .logOutWrapper{
+        padding-bottom: 0;
+    }
+
+    .modal{
+        width: 560px!important;;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .userContainer {
+        width: 354px;
+    }
+
+    .avatarIMG{
+        width: 120px;
+        height: 120px;
+    }
+    .edit{
+        right: 115px;
+        top: 24px;
+    }
+    .bottomDiv {
+        margin-top: 58px;
+    }
+
+    .link, .activeLink{
+        height: 56px;
+        width: 313px;
+    }
+
+    .logOutWrapper{
+        padding-bottom: 63px;
+    }
+}

@@ -1,0 +1,101 @@
+.userContactsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+    margin-top: 30px;
+}
+
+.contact {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.contactChangedWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userContactsTitle {
+    margin-top: 10px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #000000;
+}
+
+
+.contactWrapper {
+    padding-bottom: 35px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .contactTitle {
+        margin-top: 22px;
+    }
+
+    .changeDesktop {
+        display: none;
+    }
+
+
+    .userContactsContainer {
+        padding-right: 3px;
+    }
+
+    .userContactsTitle {
+        margin: 10px 0 19px;
+    }
+
+    .contactChangedWrapper {
+        padding-top: 3px;
+    }
+
+    .changeMobile {
+        top: -7px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .userContactsContainer {
+        padding-bottom: 12px;
+    }
+
+    .contact {
+        padding-top: 2px;
+    }
+
+    .userContactsTitle {
+        margin: 10px 0 20px;
+    }
+
+    .changeMobile {
+        display: none;
+    }
+
+    .changeDesktop {
+        right: 10px;
+        top: -4px;
+    }
+
+}
+
+

@@ -1,0 +1,192 @@
+.weekBalanceContainer {
+    background: #FFFFFF;
+    padding-top: 2px;
+    /*overflow-y: auto;*/
+    /*height: calc(100vh - 100px);*/
+    padding-bottom: 70px;
+}
+
+.weekBalanceDataWrapper {
+    display: none;
+}
+
+.transactionsWrapper{
+    display: flex;
+    margin: 24px 0 0 24px;
+}
+
+.activeTransactions, .transactions{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+    background: #302DA7;
+    border-radius: 55px;
+    display: flex;
+    align-content: center;
+    height: 32px;
+    padding: 4px 14px 5px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.transactions{
+    background: #E2E0EF;
+    color: #6F6C86;
+}
+
+.activeTransactions img, .transactions img{
+    margin-right: 5px;
+    top: 1px;
+}
+.activeTransactions:first-child img, .transactions:first-child img{
+    margin-right: 5px;
+    top: 3px;
+}
+
+.date{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+
+    background: #FAF9FF;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 22px 0 9px 25px;
+}
+
+.tips{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    height: 47px;
+    border-bottom: 1px solid  #E2E0EF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-left: 25px;
+}
+
+.tipsBalance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #EB4C3A;
+}
+
+.clock{
+    width: 16.25px;
+    margin-right: 11px;
+}
+
+.serviceCommission{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+
+    height: 47px;
+    border-bottom: 1px solid  #E2E0EF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-left: 25px;
+}
+
+.serviceCommission>span:last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px){
+    .noTransactions {
+        display: none;
+    }
+    .weekBalanceDataWrapper {
+        display: block;
+    }
+
+    .transactionsWrapper{
+        display: none;
+    }
+
+    .date{
+        padding: 14px 16px;
+        margin: 23px 8px 9px 8px;
+    }
+
+    .tips{
+        padding: 0 16px;
+        margin: 0 8px;
+    }
+
+    .serviceCommission{
+        margin: 0 8px 2px 8px;
+        padding: 2px 16px 0 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .noTransactions {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        text-align: center;
+        min-height: 392px;
+        background: url("../../../assets/images/balance/noTransactions.png") center 20px/ 280px 280px no-repeat;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .noTransactions {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        text-align: center;
+        min-height: 392px;
+        background: url("../../../assets/images/balance/noTransactions.png") center 20px/ 320px 320px no-repeat;
+    }
+}

@@ -1,0 +1,65 @@
+.ellipse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    margin: 0 auto;
+    background: #302DA7;
+    border-radius: 50%;
+}
+
+.ellipse img{
+    height: 15.5px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .ellipse{
+        position: fixed;
+        top: calc(100% - 110px);
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .attachEmployee {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .employeesAndRoomsContainer {
+        padding: 25px 79px 20px 0;
+    }
+
+    .ellipseWrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 0;
+        top: -40px;
+        cursor: pointer;
+    }
+
+    .ellipse {
+        margin-right: 17px;
+    }
+
+    .attachEmployee{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #302DA7;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .employeesAndRoomsContainer {
+        padding: 32px 0 20px 0;
+    }
+
+}

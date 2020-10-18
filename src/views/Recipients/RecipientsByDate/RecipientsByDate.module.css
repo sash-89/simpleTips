@@ -1,0 +1,51 @@
+.recipientsByDateMBContainer{
+
+}
+
+.dateWrapper{
+    display: flex;
+    justify-content: space-around;
+    background: #302DA7;
+    border-radius: 55px;
+    height: 32px;
+    margin: 0 0 8px 16px;
+    width: max-content;
+    padding: 4px 5px 4px 12px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.0015em;
+    color: #FFFFFF;
+}
+.dateWrapper img{
+    width: 20px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+    .recipientsWrapper{
+        height: calc(100vh - 160px);
+        overflow-y: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dateWrapper{
+        margin: 8px 0 7px 0;
+    }
+    .recipientsWrapper{
+        height: 100%;
+        border-top: 1px solid #E2E0EF;
+        padding-top: 9px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .recipientsByDateMBContainer{
+
+    }
+}

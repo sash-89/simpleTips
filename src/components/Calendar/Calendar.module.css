@@ -1,0 +1,248 @@
+.calendarContainer{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.monthName{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    margin-bottom: 15px;
+    padding-left: 25px;
+}
+
+.month{
+    height: 48px;
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /*width: 100%;*/
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.weekName{
+    padding-left: 25px;
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.weekDays{
+    height: 40px;
+    /*margin: 0 15px;*/
+    min-width: 20px;
+    max-width: 50px;
+    width: 100%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+}
+
+.activeFirstDate{
+    position: relative;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+   max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background: url("../../assets/images/calendar/ellipse-red.png")center/ 40px no-repeat;
+    color: white;
+    cursor: pointer;
+}
+.activeBefore::after{
+    position: absolute;
+    content: "";
+    min-width: 40px;
+   max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background: #FF886D;
+    z-index: -1;
+    top: 0;
+    left: 25px;
+}
+
+.activeSecondDate{
+    position: relative;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background: url("../../assets/images/calendar/ellipse-red.png")center/ 40px no-repeat;
+    color: white;
+    cursor: pointer;
+}
+.activeSecondDate::before{
+    position: absolute;
+    content: "";
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background: #FF886D;
+    z-index: -1;
+    top:0;
+    right: 25px;
+}
+
+.activeDays{
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background: #FF886D;
+    color: white;
+    cursor: pointer;
+}
+.activeDays::after{
+    position: absolute;
+    content: "";
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    top: 0;
+
+    background: #FF886D;
+    z-index: -1;
+    left: 20px;
+}
+.activeDays::before{
+    position: absolute;
+    content: "";
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    background: #FF886D;
+    z-index: -1;
+    right: 20px;
+    top: 0;
+}
+
+.day{
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.emptyDay{
+    background: #FFFFFF;
+    min-width: 40px;
+    max-width: 170px;
+    width: 100%;
+    top: -3px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.borderBottom{
+    border: 1px solid #E2E0EF;
+    margin: 0 16px;
+}
+
+@media screen and (max-width: 420px) {
+    .activeBefore::after{
+        left: 25px;
+    }
+    .activeSecondDate::before{
+        right: 25px;
+    }
+
+}
+@media screen and (min-width: 421px) and (max-width: 600px) {
+    .activeBefore::after{
+        left: 35px;
+    }
+    .activeSecondDate::before{
+        right: 35px;
+    }
+
+    .monthName{
+        padding-left: 30px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .activeBefore::after{
+        left: 50px;
+    }
+    .activeSecondDate::before{
+        right: 50px;
+    }
+
+    .monthName{
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .activeBefore::after{
+        left: 60px;
+    }
+    .activeSecondDate::before{
+        right: 60px;
+    }
+
+    .monthName{
+        padding-left: 50px;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1023px) {
+    .activeBefore::after{
+        left: 68px;
+    }
+    .activeSecondDate::before{
+        right: 68px;
+    }
+    .monthName{
+        padding-left: 55px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .calendarContainer {
+        width: 100vw;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .monthList > div::-webkit-scrollbar { width: 3px; height: 3px;}
+    .monthList > div::-webkit-scrollbar-button {  background-color: rgba(95, 148, 226, 0.53); height: 8px; width: 5px; border-radius: 5px;}
+    .monthList > div::-webkit-scrollbar-track {  background-color: #999;}
+    .monthList > div::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+    .monthList > div::-webkit-scrollbar-thumb { height: 50px; background-color: #302da7; border-radius: 3px;}
+    .monthList > div::-webkit-scrollbar-corner { background-color: #999;}
+    .monthList > div::-webkit-resizer { background-color: #666;}
+
+}

@@ -1,0 +1,80 @@
+.accordionContainer {
+    width: 100%;
+    padding: 16px;
+    background: #ffffff;
+    height: calc( 100vh - 56px);
+    overflow-Y: auto;
+}
+
+.tab, .activeTab{
+    display: flex;
+    align-items: center;
+    background: white;
+    word-spacing: 4px;
+    padding: 16px;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(50, 53, 65, 0.16);
+    border-radius: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    margin-bottom: 8px;
+}
+
+.tab{
+    transition: ease-in-out 0.1s;
+}
+
+
+.activeTab {
+    color: white;
+    box-shadow: 0 3px 6.96702px rgba(48, 45, 167, 0.37), 0 10px 22.4628px rgba(48, 45, 167, 0.167382), 0 20px 67px rgba(48, 45, 167, 0.123114);
+    background-color: #302DA7;
+    z-index: 2;
+}
+
+.activeAnswersWrapper {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(50, 53, 65, 0.16);
+    border-radius: 0 0 8px 8px;
+    top: -10px;
+    min-height: 60px;
+    height: 100%;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.hiddenAnswersWrapper{
+    height: 0;
+    visibility: visible;
+    opacity: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 20px;
+    width: 12px;
+    right: 20px;
+}
+
+
+.activeAnswers{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+    margin-top: 5px;
+}

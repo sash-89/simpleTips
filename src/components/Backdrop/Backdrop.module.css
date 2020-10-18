@@ -1,0 +1,31 @@
+.Backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    background: rgba(0, 0, 0, 0.26);
+    transition: .35s ease;
+    z-index: 15;
+}
+.BackdropOff {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: transparent;
+    transition: .35s ease;
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .greyBG {
+        background: rgba(0, 0, 0, 0.06);
+    }
+}

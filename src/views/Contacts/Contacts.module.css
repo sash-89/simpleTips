@@ -1,0 +1,134 @@
+
+.ContentTitle{
+    margin-top: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+}
+.ContentBody{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+.Body{
+    display: flex;
+    flex-direction: column;
+}
+.BodyContent{
+    display: flex;
+    flex-direction: column;
+}
+.BodyButton{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.BodyButtonsStyle{
+    margin-top: 20px;
+    display: flex;
+
+}
+.BodyButtonsStyleText{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #0D2221;
+    margin-left: 14px;
+}
+
+.title{
+    margin-top: 21px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px) {
+    .contactContainer{
+        width: 100%;
+        padding: 16px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        height: calc( 100vh - 56px);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .contactContainer {
+        width: 100%;
+        padding-top: 15px;
+        display: grid;
+        justify-content: center;
+
+        right: 46px;
+    }
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+
+        padding-bottom: 5px;
+    }
+
+    .btnWrapper{
+        display: flex;
+    }
+
+    .BodyButton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        left: 35px;
+        top: -10px;
+    }
+
+    .BodyButtonsStyle:last-child{
+        left: 50px;
+    }
+
+    .BodyButtonsStyle:last-child .BodyButtonsStyleText{
+        top: 3px;
+    }
+
+    .ContentTitle{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.004em;
+        color: #6F6C86;
+    }
+
+    .ContentBody{
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.001em;
+        color: #0D2221;
+
+        padding-bottom: 9px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .contactContainer {
+        padding-right: 225px;
+    }
+}

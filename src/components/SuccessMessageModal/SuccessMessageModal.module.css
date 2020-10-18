@@ -1,0 +1,50 @@
+.modalContainer{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+
+    background: #0D2221;
+    border-radius: 8px;
+    height: 48px;
+    margin: 0 auto;
+    transition: .25s linear;
+    z-index: 25;
+}
+
+.modalText{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    .modalContainer{
+        top: calc(100vh - 100px);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 308px;
+        max-width: 400px;
+        padding: 5px;
+        width: calc(100% - 16px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .modalContainer{
+        top: 84px;
+        right: 24px;
+        min-width: 344px;
+        max-width: 400px;
+        padding: 5px;
+        width: 100%;
+    }
+}

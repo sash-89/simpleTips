@@ -1,0 +1,109 @@
+@media screen and (max-width: 1023px) {
+    .menuWrapper {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: -webkit-fill-available;
+        height: 100vh;
+        background: #302DA7;
+    }
+
+    .menuClose {
+        transform: translateX(-100%);
+        transition: transform .3s linear;
+    }
+
+    .menuOpen {
+        transform: translateX(0);
+        transition: transform .3s linear;
+    }
+
+    .menuHeader {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px 0 20.25px;
+        height: 56px;
+        align-items: center;
+    }
+
+    .supportWrapper {
+        display: flex;
+    }
+
+    .closeIcon {
+        height: 15.5px;
+    }
+
+    .supportImgWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-left: 16px;
+        background: #FFFFFF;
+        box-shadow: 0 3.75815px 6.96702px rgba(0, 0, 0, 0.1),
+        0 17.583px 22.4628px rgba(0, 0, 0, 0.04), 0 36px 67px rgba(0, 0, 0, 0.06);
+    }
+
+    .supportNav {
+        font-family: Inter;
+        padding-top: 3px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: 0.0015em;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .supportNav:visited, .supportNav:active {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menuWrapper{
+        grid-area: menu;
+        background: #302DA7;
+        width: 118px;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 54px;
+        z-index: 0;
+    }
+
+    .supportNav{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.004em;
+        color: rgba(255, 255, 255, 0.72);
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .supportNav > span{
+        padding-top: 10px;
+    }
+
+    .activeLink{
+        color: #F6C144;
+    }
+}

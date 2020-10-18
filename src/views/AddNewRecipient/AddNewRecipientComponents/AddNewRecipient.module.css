@@ -1,0 +1,48 @@
+.addNewRecipientWrapper{
+    padding: 0 16px 0 16px;
+}
+
+
+.inputFieldWrapper{
+    margin-top: 22px;
+    margin-bottom: 31px;
+}
+
+.btnWrapper {
+    margin-right: 148px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .addNewRecipientContainer{
+        background: #FFFFFF;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        z-index: 14;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .addNewRecipientContainer{
+        background: #FFFFFF;
+        position: fixed;
+        width: 414px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 20;
+        height: -webkit-fill-available;
+        height: 100vh;
+        border-radius: 24px 0 0 24px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .addNewRecipientContainer {
+        width: 430px;
+    }
+}

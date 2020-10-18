@@ -1,0 +1,141 @@
+@media screen and (max-width: 1023px) {
+    nav {
+        height: calc(100vh - 56px);
+        overflow-y: auto;
+    }
+
+    .Home, .Balance, .Requisites, .Rooms,
+    .Recipients, .Reviews, .PrintForms, .Settings {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        padding: 16px 0 0 18.4px;
+    }
+
+    .QA, .Contacts,
+    .InviteFriends {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    .Requisites {
+        padding: 16px 0 0 19.4px;
+    }
+
+    .Settings {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 36px 0 44px 2px;
+        margin: 0 16px 3px 16px;
+    }
+
+    .Home > .navMenu, .Balance > .navMenu, .Requisites > .navMenu,
+    .Rooms > .navMenu, .Recipients > .navMenu, .Reviews > .navMenu,
+    .PrintForms > .navMenu, .Settings > .navMenu {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.0015em;
+        color: rgba(255, 255, 255, 0.72);
+        text-decoration: none;
+        padding-left: 34px;
+    }
+
+    .Requisites > .navMenu {
+        padding-left: 36px;
+    }
+
+    .Rooms > img {
+        /*left: 1px;*/
+    }
+
+    .Recipients > .navMenu {
+        padding-left: 31px;
+    }
+
+    .Recipients > img {
+        right: 2px;
+    }
+
+    .QA > .navMenu, .Contacts > .navMenu,
+    .InviteFriends > .navMenu {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.001em;
+        color: rgba(255, 255, 255, 0.72);
+        text-decoration: none;
+        padding-left: 24px;
+    }
+
+    .QA > .navMenu {
+        top: 2px;
+    }
+
+    .navMenu.menuActiveLink {
+        color: #F6C144;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    nav{
+        padding-top: 26px;
+    }
+
+    .Home>a, .Balance>a, .Requisites>a, .Rooms>a,
+    .Recipients>a, .Reviews>a, .PrintForms>a, .Settings>a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        margin-bottom: 36px;
+    }
+
+    .QA > a, .Contacts > a,
+    .InviteFriends > a {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #6F6C86;
+        text-decoration: none;
+
+    }
+
+    .Home > .navMenu >span, .Balance > .navMenu >span, .Requisites > .navMenu >span,
+    .Rooms > .navMenu >span, .Recipients > .navMenu >span, .Reviews > .navMenu >span,
+    .PrintForms > .navMenu >span, .Settings > .navMenu >span {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.004em;
+        color: rgba(255, 255, 255, 0.72);
+        padding-top: 10px;
+    }
+
+    .Requisites > a{
+        margin-bottom: 34px;
+    }
+
+    .navMenu.menuActiveLink > span{
+        color: #F6C144;
+    }
+
+    .tabsUnderline{
+        position: absolute;
+        top: 100%;
+        z-index: 2;
+        height: 2px;
+        background: #EB4C3A;
+        border-radius: 15px 15px 0 0;
+    }
+}

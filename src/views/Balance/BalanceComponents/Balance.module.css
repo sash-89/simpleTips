@@ -1,0 +1,362 @@
+.balanceContainer {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.virtualCardWrapper{
+    padding-top: 16px;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 92%, rgba(216,216,216,1) 100%, rgba(216,216,216,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 92%,rgba(216,216,216,1) 100%,rgba(216,216,216,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 92%,rgba(216,216,216,1) 100%,rgba(216,216,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d8d8d8',GradientType=0 );
+
+}
+.notIdentified{
+    position: relative;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    color: #E70909;
+
+    text-align: center;
+    padding: 19px 30px 33px 0;
+}
+
+.ArrowRed{
+    text-align: center;
+    position: absolute;
+    top: 21px;
+    width: 7px;
+    height: 12px;
+    margin-left: 15px;
+}
+
+.weeklyBalanceContainer{
+    top: -13px;
+    background: #FFFFFF;
+    border-top: 2px solid rgba(48, 45, 167, 0.071);
+    /*box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.0282725), 0 -12px 23.87px rgba(0, 0, 0, 0.0417275), 0 -12px 104px rgba(0, 0, 0, 0.07);*/
+    border-radius: 16px 16px 0 0;
+}
+.today{
+    background: #FAF9FF;
+    border-radius: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    margin: 0 8px 9px 8px;
+    padding: 12px 0 14px 16px ;
+}
+.tips{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+    height: 47px;
+    border-bottom: 1px solid  #E2E0EF;
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.tipsBalance{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #EB4C3A;
+}
+
+.clock{
+    width: 16.25px;
+    margin-right: 11px;
+}
+
+.serviceCommission{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+
+    height: 47px;
+    border-bottom: 1px solid  #E2E0EF;
+    margin: 2px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+}
+
+.serviceCommission>span:last-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+.noTransactions{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    text-align: center;
+    min-height: 248px;
+    background: url("../../../assets/images/balance/noTransactions.png") center 32px/ 136px 139px no-repeat;
+}
+
+
+@media screen and (max-width: 1023px){
+    .virtualCardWrapper{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .filterByDate {
+        position: absolute;
+        right: 40px;
+        top: 95px;
+        z-index: 1;
+        display: flex;
+        align-content: center;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #302DA7;
+        cursor: pointer;
+    }
+    .filterByDate span{
+        padding-left: 15px;
+        top: 3px;
+    }
+
+    .balanceContainer {
+        /*height: 100%;*/
+        display: flex;
+    }
+
+    .virtualCardWrapper{
+        min-width: 353px;
+        max-width: 472px;
+        padding: 24px;
+        background: #FAF9FF;
+        border-radius: 0 24px 24px 0;
+    }
+
+    .weeklyBalanceContainer{
+        background: transparent;
+        margin: 0;
+        border-top: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.0015em;
+        color: #0D2221;
+
+        padding: 18px 0;
+    }
+
+    .paymentButton{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .paymentButton img:last-child{
+        padding-right: 22px;
+        padding-left: 8px;
+    }
+
+    .btnWrapper{
+        padding: 65px 0 65px 155px;
+    }
+
+    .btn span{
+        top: -3px;
+        left: 6px;
+    }
+    .btn img{
+        right: 10px;
+    }
+
+
+
+    .eventsContainer{
+        width: 100%;
+        margin-right: 24px;
+        /*overflow: hidden;*/
+    }
+
+    .titleEvents{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+
+        padding: 36px 24px 18px;
+    }
+
+    .tabsHeaderCls{
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .underlineCls{
+        position: absolute;
+        min-width: 43px;
+        max-width: 55px;
+        left: 24px;
+        top: 100%;
+        z-index: 2;
+        height: 2px;
+        background: #EB4C3A;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .tabTittleActive, .tabTittle{
+        margin: 0 24px;
+    }
+
+    .balanceContainer::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .balanceContainer::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .balanceContainer::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .balanceContainer::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .balanceContainer::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .balanceContainer::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .balanceContainer::-webkit-resizer {
+        background-color: #666;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .filterByDate {
+        right: 285px;
+        top: 105px;
+    }
+    .filterByDate span{
+        padding-left: 13px;
+    }
+
+    .virtualCardWrapper{
+        min-width: 472px;
+        max-width: 580px;
+        padding: 32px 65px;
+        background: #FAF9FF;
+        border-radius: 0 24px 24px 0;
+        min-height: calc(100vh - 60px);
+        height: 100%;
+    }
+
+    .weeklyBalanceContainer{
+        padding-top: 15px;
+    }
+
+
+    .title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .paymentButton{
+        margin-top: 45px;
+        justify-content: left;
+        margin-bottom: 40px;
+    }
+
+    .btnWrapper{
+        padding-top: calc(100vh - 800px);
+        padding-bottom: 0;
+        padding-left: 190px;
+        left: 35px;
+    }
+
+
+
+    .eventsContainer{
+        width: 100%;
+        margin-right: 260px;
+    }
+
+    .titleEvents{
+        padding: 36px 32px 25px;
+    }
+
+    .tabsHeaderCls{
+        padding-left: 8px;
+    }
+
+    .underlineCls{
+        left: 32px;
+    }
+}

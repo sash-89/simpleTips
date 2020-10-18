@@ -1,0 +1,20 @@
+.reSendBtn{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #302DA7;
+
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.reSendBtn:disabled{
+    color: #E2E0EF;
+    cursor: no-drop;
+}

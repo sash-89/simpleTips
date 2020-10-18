@@ -1,0 +1,103 @@
+.switchTitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.001em;
+
+}
+.switchWrapper{
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 24px;
+}
+
+.switchWrapper > span:last-child{
+    left: 12px;
+}
+
+
+.textWrapper {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0025em;
+    color: #6F6C86;
+    padding-right: 16px;
+}
+
+.textWrapper div:last-child{
+    padding-top: 25px;
+}
+
+.paymentButton{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paymentButton img:last-child{
+    right: 7px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .notificationsContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 14;
+    }
+
+    .contentWrapper{
+        padding: 22px 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .notificationsContainer {
+        position: absolute;
+        width: 370px;
+        left: 377px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+
+    .contentWrapper{
+        padding-top: 7px;
+    }
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        padding: 35px 0 35px;
+    }
+
+    .paymentButton{
+        width: 290px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .notificationsContainer {
+        position: absolute;
+        width: 440px;
+        left: 505px;
+    }
+}

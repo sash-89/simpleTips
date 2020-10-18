@@ -1,0 +1,110 @@
+.choosingTransactionsWrap > div:first-child{
+    height: 100vh;
+}
+
+.choosingTransactionsContainer{
+    /*box-shadow: 0 -6px 8px rgba(0, 0, 0, 0.0282725),*/
+    /*0 -12px 23.87px rgba(0, 0, 0, 0.0417275),*/
+    /*0 -12px 104px rgba(0, 0, 0, 0.07);*/
+    position: fixed;
+    background: #FFFFFF;
+    border-radius: 16px 16px 0 0;
+    width: 100vw;
+    top: calc(100vh - 235px);
+    bottom: 0;
+    height: 235px;
+    padding: 29px 18.88px 30px 19.25px;
+
+}
+
+.choosingTransactionsContainerOpen{
+    visibility: visible;
+    z-index: 15;
+    transform: translateY(0);
+    transition: .3s ease-out;
+    will-change: transform;
+
+    /*top: calc(150% - 176px);*/
+    /*visibility: visible;*/
+    /*animation: choosingTransactionsUp .3s ease-out forwards;*/
+    /*will-change: animation;*/
+
+}
+.choosingTransactionsContainerClose{
+    transform: translateY(+100%);
+    transition: .3s ease-out;
+    visibility: hidden;
+    z-index: 15;
+
+    /*top: calc(150% + 176px);*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*animation: choosingTransactionsDown .2s ease-out ;*/
+    will-change: transform;
+
+}
+
+/*@keyframes choosingTransactionsUp {*/
+/*    0%{*/
+/*        transform: translateY(calc(100% + 176px));*/
+/*    }*/
+/*    100%{*/
+/*        transform: translateY(calc(100% - 176px));*/
+/*        position: fixed;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        z-index: 15;*/
+/*    }*/
+/*}*/
+/*@keyframes choosingTransactionsDown {*/
+/*    0%{*/
+/*        top: calc(150% - 176px);*/
+/*        position: fixed;*/
+/*        left: 0;*/
+/*        right: 0;*/
+/*        z-index: 15;*/
+/*    }*/
+/*    100%{*/
+/*        top: calc(100% + 176px);*/
+/*        z-index: 0;*/
+/*        visibility: hidden;*/
+
+/*    }*/
+/*}*/
+
+.transactions{
+    display: flex;
+    padding-bottom: 28px;
+    justify-content: space-between;
+}
+.transactions>img{
+   height: 13px;
+   width: 19px;
+    margin-top:2px
+}
+
+.transactionTitle img{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+
+    margin-right: 35px;
+}
+.transactionTitle:first-child{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+
+    display: flex;
+    align-items: center;
+}

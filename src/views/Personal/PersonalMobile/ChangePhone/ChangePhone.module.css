@@ -1,0 +1,159 @@
+.text{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+}
+
+.btnContinue{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+}
+
+.resent{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+}
+
+.errorMessage, .smsCodeErrorMessage{
+    color: #ff563a;
+}
+
+@media screen and (max-width: 1023px) {
+    .changePhoneContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 25;
+    }
+
+    .contentWrapper{
+        padding: 30px 15px;
+    }
+
+    .btnContinue{
+        margin-top: 20px;
+        width: 97px;
+    }
+
+    .inputWrapper{
+        padding-bottom: 33px;
+    }
+
+    .resent {
+        padding: 4px 0 33px 20px;
+    }
+
+    .btnConfirm{
+        display: block;
+        width: 90px;
+        margin-top: 33px;
+    }
+
+    .errorMessage{
+        top: -20px;
+        margin-left: 10px;
+    }
+
+    .smsCodeErrorMessage{
+        margin: 10px 0 10px 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .changePhoneContainer {
+        position: absolute;
+        width: 370px;
+        left: 377px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+
+    .headerCls {
+        border: none;
+        padding-top: 41px;
+        right: 78px;
+    }
+
+    .headerCls h2 {
+        right: 67px;
+    }
+
+    .headerCls img {
+        height: 76px;
+    }
+
+    .contentWrapper{
+        padding-top: 37px;
+    }
+    .text {
+        margin: 15px 0 33px;
+    }
+
+    .btnContinue{
+        width: 97px;
+    }
+
+    .inputWrapper:last-child{
+        padding-top: 33px;
+    }
+
+    .resent {
+        padding: 4px 0 26px 20px;
+    }
+
+    .reSendBtn{
+        position: absolute;
+        left: 394px;
+        top: 52px;
+    }
+
+    .btnConfirm{
+        display: block;
+        width: 90px;
+    }
+
+    .errorMessage{
+        top: 8px;
+        width: 400px;
+    }
+
+    .smsCodeErrorMessage{
+        position: absolute;
+        top: 65px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .changePhoneContainer {
+        width: 440px;
+        left: 505px;
+    }
+
+    .reSendBtn{
+        left: 464px;
+        top: 52px;
+    }
+
+    .errorMessage{
+        width: 100%;
+    }
+}

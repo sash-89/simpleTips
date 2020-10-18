@@ -1,0 +1,109 @@
+.error{
+    color: #ff563a;
+    padding: 5px 0 0 5px;
+}
+
+@media screen and (max-width: 1023px) {
+    .personalContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background: white;
+        z-index: 14;
+    }
+
+    .inputsWrapper{
+        padding: 30px 15px 50px;
+        height: calc(100vh - 56px);
+        /*height: 100vh;*/
+        overflow-y: auto;
+        /*overflow-x: hidden;*/
+
+    }
+    .inputsWrapperIphoneInFocus{
+        overflow-y: visible;
+    }
+
+    .inputs{
+        padding-bottom: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .personalContent{
+        height: calc(100vh - 60px);
+        overflow-y: auto;
+    }
+    .personalContent::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .personalContent::-webkit-scrollbar-button {
+        background-color: rgba(95, 148, 226, 0.53);
+        height: 8px;
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    .personalContent::-webkit-scrollbar-track {
+        background-color: #999;
+    }
+
+    .personalContent::-webkit-scrollbar-track-piece {
+        background-color: #ffffff;
+    }
+
+    .personalContent::-webkit-scrollbar-thumb {
+        height: 50px;
+        background-color: #302da7;
+        border-radius: 3px;
+    }
+
+    .personalContent::-webkit-scrollbar-corner {
+        background-color: #999;
+    }
+
+    .personalContent::-webkit-resizer {
+        background-color: #666;
+    }
+
+    .personalContainer {
+        position: absolute;
+        width: 370px;
+        left: 377px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+    }
+
+    .title{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #0D2221;
+        padding: 35px 0 35px;
+    }
+
+    .inputs{
+        margin: 0 0 31px;
+    }
+
+}
+
+
+@media screen and (min-width: 1920px) {
+    .personalContainer {
+        position: absolute;
+        width: 440px;
+        left: 505px;
+    }
+}

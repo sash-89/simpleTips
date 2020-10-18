@@ -1,0 +1,32 @@
+.Btn{
+    height: 48px;
+    text-align: center;
+    background: #302DA7;
+    box-shadow: 0 3px 6.96702px rgba(48, 45, 167, 0.37),
+    0 10px 22.4628px rgba(48, 45, 167, 0.167382),
+    0 20px 67px rgba(48, 45, 167, 0.123114);
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.Btn:active{
+    background: rgba(48, 45, 167, 0.93);
+}
+
+.Btn:disabled{
+    background: #E2E0EF;
+    color: #6F6C86;
+    box-shadow: 0 3px 6.96702px rgba(223, 223, 223, 0.37);
+}

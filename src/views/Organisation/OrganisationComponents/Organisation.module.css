@@ -1,0 +1,191 @@
+.organisationWrapper{
+    padding: 5px 8px 10px 8px;
+}
+
+.title{
+    background: white;
+    height: 165px;
+    box-shadow: 0 5.65px 8px rgba(0, 0, 0, 0.0282725), 0 12.34px 23.87px rgba(0, 0, 0, 0.0417275), 0 12px 104px rgba(0, 0, 0, 0.07);
+    border-radius: 16px;
+    padding: 16px 20px 5px 16px
+
+}
+.title h6{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    flex: none;
+    order: 0;
+    align-self: center;
+}
+.title p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #6F6C86;
+    flex: none;
+    order: 0;
+    align-self: center;
+    padding: 9px 0 17px;
+
+}
+
+.Reject {
+    margin-left: 24px;
+}
+
+.btnsWrapper {
+    display: flex;
+}
+
+.btn{
+    width: 83px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.myOrganisation h6{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0015em;
+    color: #0D2221;
+    padding: 40px 0 24px;
+}
+
+.nameOrganisation{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.004em;
+    color: #6F6C86;
+}
+
+.organisationAccept{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+
+.organisationAccept p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.001em;
+    color: #0D2221;
+}
+
+@media screen and (max-width: 1023px) {
+    .organisationContainer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 14;
+    }
+
+    .myOrganisation{
+        padding: 0 8px;
+    }
+
+    .deleteDesktop{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .organisationContainer {
+        position: absolute;
+        width: 370px;
+        left: 370px;
+
+        margin-right: 20px;
+        bottom: 0;
+        background: #fff;
+        z-index: 5;
+        padding-top: 30px;
+    }
+
+    .title {
+        border-radius: 24px;
+        width: 526px;
+        height: 173px;
+        padding: 24px 20px 5px 22px;
+    }
+
+    .organisationWrapper{
+        padding: 5px 8px 10px 8px;
+    }
+
+    .title p {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.001em;
+        padding: 12px 0 29px;
+    }
+
+    .myOrganisation{
+        padding: 17px 0;
+    }
+
+    .myOrganisation h6{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .nameOrganisation{
+        padding: 6px 0 1px;
+    }
+
+    .deleteMobile{
+        display: none;
+    }
+
+    .deleteDesktop{
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        letter-spacing: 0.02em;
+        color: #E70909;
+        cursor: pointer;
+    }
+
+    .modal{
+        width: 560px
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .organisationContainer {
+        width: 440px;
+        left: 498px;
+    }
+
+    .title {
+        border-radius: 24px;
+        width: 794px;
+        height: 173px;
+        padding: 24px 20px 5px 22px;
+    }
+}
